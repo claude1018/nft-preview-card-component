@@ -77,6 +77,7 @@ main section.card .count p {
 }
 main section.card .count p:first-child {
   color: hsl(178deg, 100%, 50%);
+  font-weight: 600;
 }
 main section.card .count p:first-child::before {
   content: url("/app/images/icon-ethereum.svg");
