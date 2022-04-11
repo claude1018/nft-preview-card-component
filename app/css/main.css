@@ -62,7 +62,6 @@ main section.card h1:hover {
 }
 main section.card p {
   margin-top: 1.2625rem;
-  margin-bottom: 1.125rem;
   color: hsl(215deg, 51%, 70%);
   font-size: 1.125rem;
 }
@@ -106,6 +105,7 @@ main section.card .author figure img {
 }
 main section.card .author p {
   color: hsl(215deg, 51%, 70%);
+  margin: auto 0;
 }
 main section.card .author p span.name {
   color: hsl(0deg, 0%, 100%);
