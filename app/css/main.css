@@ -78,12 +78,12 @@ main section.card section.count p {
   align-items: center;
 }
 main section.card section.count p:first-child::before {
-  content: url("/dist/images/icon-ethereum.svg");
+  content: url("/app/images/icon-ethereum.svg");
   display: inline-block;
   margin-right: 0.525rem;
 }
 main section.card section.count p:last-child::before {
-  content: url("/dist/images/icon-clock.svg");
+  content: url("/app/images/icon-clock.svg");
   display: inline-block;
   margin-right: 0.525rem;
 }

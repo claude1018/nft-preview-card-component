@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./sass/main.sass ./dist/css/main.css --watch"
+    "sass": "sass ./sass/main.sass ./app/css/main.css --watch"
   },
   "keywords": [],
   "author": "claude",
