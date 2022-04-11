@@ -1,0 +1,125 @@
+/**/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Outfit", sans-serif;
+  background: hsl(217deg, 54%, 11%);
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+main section.card {
+  background: hsl(216deg, 50%, 16%);
+  border-radius: 1rem;
+  max-width: 22.1875rem;
+  padding: 1.5625rem;
+  color: hsl(0deg, 0%, 100%);
+}
+main section.card figure[class=nft-img] {
+  position: relative;
+}
+main section.card figure[class=nft-img] img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+main section.card figure[class=nft-img] .overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98.7%;
+  width: 100%;
+  background: rgba(0, 255, 247, 0.5);
+  border-radius: 0.5rem;
+  top: 0;
+  opacity: 0;
+}
+main section.card figure[class=nft-img] .overlay img {
+  height: 3rem;
+  width: auto;
+}
+main section.card figure[class=nft-img] .overlay:hover {
+  opacity: 1;
+}
+main section.card section.details {
+  margin-top: 1.5625rem;
+}
+main section.card section.details h1 {
+  font-size: 1.5rem;
+}
+main section.card section.details h1:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+main section.card section.details p {
+  margin-top: 1.2625rem;
+  margin-bottom: 1.125rem;
+  color: hsl(215deg, 51%, 70%);
+  font-size: 1.125rem;
+}
+main section.card section.count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section.card section.count p {
+  display: flex;
+  align-items: center;
+}
+main section.card section.count p:first-child::before {
+  content: url("/dist/images/icon-ethereum.svg");
+  display: inline-block;
+  margin-right: 0.525rem;
+}
+main section.card section.count p:last-child::before {
+  content: url("/dist/images/icon-clock.svg");
+  display: inline-block;
+  margin-right: 0.525rem;
+}
+main section.card section.author {
+  border-top: 1px solid hsl(215deg, 32%, 27%);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+main section.card section.author figure img {
+  min-height: 2.125rem;
+  width: 2.125rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+}
+main section.card section.author p {
+  color: hsl(215deg, 51%, 70%);
+}
+main section.card section.author p span.name {
+  color: hsl(0deg, 0%, 100%);
+}
+main section.card section.author p span.name:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.attribution {
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.825rem;
+  padding: 1rem 0 0.625rem 0;
+}
+.attribution a {
+  color: hsl(178deg, 100%, 50%);
+}
+
+/*# sourceMappingURL=main.css.map */

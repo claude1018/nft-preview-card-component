@@ -1,0 +1,119 @@
+/**/
+
+// Primary
+$soft-blue: hsl(215, 51%, 70%)
+$cyan: hsl(178, 100%, 50%)
+
+// Neutral
+$main-bg: hsl(217, 54%, 11%)
+$card-bg: hsl(216, 50%, 16%)
+$line-color: hsl(215, 32%, 27%)
+$white: hsl(0, 0%, 100%)
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+body
+  height: 100vh
+  width: 100vw
+  font-family: 'Outfit', sans-serif
+  background: $main-bg
+
+main
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 1.5rem
+  
+  section.card
+    background: $card-bg
+    border-radius: 1rem
+    max-width: 22.1875rem
+    padding: 1.5625rem
+    color: $white
+
+    figure[class="nft-img"]
+      position: relative 
+      img
+        width: 100%
+        height: auto
+        border-radius: 0.5rem
+      .overlay
+        position: absolute
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 98.7%
+        width: 100%
+        background: rgba($cyan, 0.5)
+        border-radius: 0.5rem
+        top: 0
+        opacity: 0
+        img
+          height: 3rem  
+          width: auto 
+        &:hover
+          opacity: 1
+    
+    section.details
+      margin-top: 1.5625rem
+      h1
+        font-size: 1.5rem
+        &:hover
+          color: $cyan
+      p
+        margin-top: 1.2625rem
+        margin-bottom: 1.125rem
+        color: $soft-blue
+        font-size: 1.125rem
+    section.count 
+      display: flex
+      justify-content: space-between
+      align-items: center
+      p
+        display: flex
+        align-items: center
+        &:first-child
+          &::before
+            content: url('/dist/images/icon-ethereum.svg')
+            display: inline-block
+            margin-right: 0.525rem
+            
+        &:last-child
+          &::before
+            content: url('/dist/images/icon-clock.svg')
+            display: inline-block
+            margin-right: 0.525rem
+    
+    section.author 
+      border-top: 1px solid $line-color
+      margin-top: 1rem
+      padding-top: 1rem
+      display: flex
+      align-items: center
+      justify-content: start
+      gap: 1rem
+
+      figure img
+        min-height: 2.125rem
+        width: 2.125rem
+        border: 1px solid $white
+        border-radius: 50%
+      
+      p 
+        color: $soft-blue
+        span.name
+          color: $white
+          &:hover
+            color: $cyan
+
+.attribution
+  text-align: center
+  color: $white
+  font-size: 0.825rem
+  padding: 1rem 0 0.625rem 0
+  a
+    color: $cyan
