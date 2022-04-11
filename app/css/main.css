@@ -8,7 +8,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   background: hsl(217deg, 54%, 11%);
 }
 
@@ -26,15 +26,15 @@ main section.card {
   padding: 1.5625rem;
   color: hsl(0deg, 0%, 100%);
 }
-main section.card figure[class='nft-img'] {
+main section.card figure[class=nft-img] {
   position: relative;
 }
-main section.card figure[class='nft-img'] img {
+main section.card figure[class=nft-img] img {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
 }
-main section.card figure[class='nft-img'] .overlay {
+main section.card figure[class=nft-img] .overlay {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -46,49 +46,47 @@ main section.card figure[class='nft-img'] .overlay {
   top: 0;
   opacity: 0;
 }
-main section.card figure[class='nft-img'] .overlay img {
+main section.card figure[class=nft-img] .overlay img {
   height: 3rem;
   width: auto;
 }
-main section.card figure[class='nft-img'] .overlay:hover {
+main section.card figure[class=nft-img] .overlay:hover {
   opacity: 1;
 }
-main section.card section.details {
+main section.card h1 {
   margin-top: 1.5625rem;
-}
-main section.card section.details h1 {
   font-size: 1.5rem;
 }
-main section.card section.details h1:hover {
+main section.card h1:hover {
   color: hsl(178deg, 100%, 50%);
 }
-main section.card section.details p {
+main section.card p {
   margin-top: 1.2625rem;
   margin-bottom: 1.125rem;
   color: hsl(215deg, 51%, 70%);
   font-size: 1.125rem;
 }
-main section.card section.count {
+main section.card .count {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main section.card section.count p {
+main section.card .count p {
   display: flex;
   align-items: center;
   color: hsl(215deg, 51%, 70%);
 }
-main section.card section.count p:first-child::before {
-  content: url('../images/icon-ethereum.svg');
+main section.card .count p:first-child::before {
+  content: url("/app/images/icon-ethereum.svg");
   display: inline-block;
   margin-right: 0.525rem;
 }
-main section.card section.count p:last-child::before {
-  content: url('../images/icon-clock.svg');
+main section.card .count p:last-child::before {
+  content: url("/app/images/icon-clock.svg");
   display: inline-block;
   margin-right: 0.525rem;
 }
-main section.card section.author {
+main section.card .author {
   border-top: 1px solid hsl(215deg, 32%, 27%);
   margin-top: 1rem;
   padding-top: 1rem;
@@ -97,19 +95,19 @@ main section.card section.author {
   justify-content: start;
   gap: 1rem;
 }
-main section.card section.author figure img {
+main section.card .author figure img {
   min-height: 2.125rem;
   width: 2.125rem;
   border: 1px solid hsl(0deg, 0%, 100%);
   border-radius: 50%;
 }
-main section.card section.author p {
+main section.card .author p {
   color: hsl(215deg, 51%, 70%);
 }
-main section.card section.author p span.name {
+main section.card .author p span.name {
   color: hsl(0deg, 0%, 100%);
 }
-main section.card section.author p span.name:hover {
+main section.card .author p span.name:hover {
   color: hsl(178deg, 100%, 50%);
 }
 
