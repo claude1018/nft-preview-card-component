@@ -80,12 +80,12 @@ main section.card .count p:first-child {
   font-weight: 600;
 }
 main section.card .count p:first-child::before {
-  content: url("/app/images/icon-ethereum.svg");
+  content: url("/nft-preview-card-component/app/images/icon-ethereum.svg");
   display: inline-block;
   margin-right: 0.525rem;
 }
 main section.card .count p:last-child::before {
-  content: url("/app/images/icon-clock.svg");
+  content: url("/nft-preview-card-component/app/images/icon-clock.svg");
   display: inline-block;
   margin-right: 0.525rem;
 }
